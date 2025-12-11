@@ -13,7 +13,7 @@ export default function Portfolio() {
   const [navColor, setNavColor] = useState("#6495ED");
   const [isPastExperience, setIsPastExperience] = useState(false);
   const sectionsRef = useRef({});
-  const sectionIds = ["About", "Work Experience", "Clinical Rotations", "Contact"];
+  const sectionIds = ["About", "Work Experience", "Contact"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
@@ -102,7 +102,6 @@ export default function Portfolio() {
       const idMap = {
     "about": "about",
     "work experience": "experience",  // maps nav label to internal id
-    "clinical rotations": "rotations",
     "contact": "contact"
   };
 
@@ -157,56 +156,7 @@ export default function Portfolio() {
     }
   ];
 
-  const rotations = [
-  {
-      title: "Pharmacy Intern, Specialty Pharmacy",
-      company: "Beth Israel Lahey Health",
-      startDate: "March 2021",
-      endDate: "May 2021",
-      details: [
-        ],
-    },
-  {
-      title: "Pharmacy Intern, Ambulatory Care",
-      company: "Atrius Health",
-      startDate: "February 2021",
-      endDate: "March 2021",
-      details: [
-        ],
-    },
-    {
-      title: "Pharmacy Intern, Internal Medicine",
-      company: "Newton-Wellesley Hospital",
-      startDate: "November 2020",
-      endDate: "December 2020",
-      details: [
-        ],
-    },
-    {
-      title: "Pharmacy Intern, Community Pharmacy",
-      company: "Walgreens",
-      startDate: "September 2020",
-      endDate: "October 2020",
-      details: [
-        ],
-    },
-    {
-      title: "Pharmacy Intern, Long Term Care Consulting",
-      company: "Strategies",
-      startDate: "August 2020",
-      endDate: "September 2020",
-      details: [
-        ],
-    },
-    {
-      title: "Pharmacy Intern, Institutional Pharmacy",
-      company: "Newton-Wellesley Hospital",
-      startDate: "May 2020",
-      endDate: "June 2020",
-      details: [
-        ],
-    },
-  ];
+
 
   return (
     <>
@@ -409,7 +359,7 @@ export default function Portfolio() {
           </div>
         </section>
         
-        {/* Clinical Rotations section */}
+        {/* Clinical Rotations section
         <section
         id="rotations"
         ref={(el) => (sectionsRef.current["rotations"] = el)}
@@ -429,7 +379,7 @@ export default function Portfolio() {
             ))}
             </ul>
         </div>
-        </section>
+        </section> */}
 
         {/* Contact section */}
         <section
