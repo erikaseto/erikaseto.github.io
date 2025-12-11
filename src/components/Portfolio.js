@@ -359,28 +359,6 @@ export default function Portfolio() {
           </div>
         </section>
         
-        {/* Clinical Rotations section
-        <section
-        id="rotations"
-        ref={(el) => (sectionsRef.current["rotations"] = el)}
-        data-aos="fade-up"
-        className="scroll-mt-16 bg-white rounded-3xl px-4 sm:px-8 py-8 sm:py-12 my-16 shadow-lg"
-        >
-        <h2 className="text-4xl font-semibold mb-8 text-center">
-            Clinical Rotations - Advanced Pharmacy Practice Experiences
-        </h2>
-
-        <div className="max-w-4xl mx-auto">
-            <ul className="list-disc list-inside space-y-2 text-left text-lg mb-6">
-            {rotations.map((item, idx) => (
-                <li key={idx} className="text-gray-900">
-                {item.title}  ({item.company}), {item.startDate} - {item.endDate}
-                </li>
-            ))}
-            </ul>
-        </div>
-        </section> */}
-
         {/* Contact section */}
         <section
           id="contact"
